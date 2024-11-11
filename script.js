@@ -261,7 +261,6 @@ function createVertexData2(){
       for (var i = 0, t = 0; i <= n; i++, t += dt) {
         for (var j = 0, p = 0; j <= m; j++, p += dp) {
             var iVertex = k * ((m + 1) * (n + 1)) + i * (m+1) + j;
-          console.log(iVertex, k, i, j)
             var x = (R + r * Math.cos(p)) * Math.cos(t) * k * 0.1;
             var y = (R + r * Math.cos(p)) * Math.sin(t);
             var z = r * Math.sin(p);
